@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .calculator {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        padding: 20px;
+      }
+
+      .display {
+        background-color: #e9ecef;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: right;
+        font-size: 2rem;
+        height: 50px;
+        line-height: 50px;
+        overflow: hidden;
+      }
+
+      .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .button {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 15px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+
+      .button:active {
+        background-color: #003f7f;
+      }
+
+      .button.function {
+        background-color: #6c757d;
+      }
+
+      .button.function:hover {
+        background-color: #5a6268;
+      }
+
+      .button.function:active {
+        background-color: #444950;
+      }
+
+      .button.equals {
+        background-color: #28a745;
+      }
+
+      .button.equals:hover {
+        background-color: #218838;
+      }
+
+      .button.equals:active {
+        background-color: #19692c;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="form1">
+      <div class="calculator">
+        <input id="calc" type="text" name="answer" /> <br />
+        <br />
+
+        <div class="buttons">
+          <input type="button" value="1" onclick="form1.answer.value += '1' " />
+          <input type="button" value="2" onclick="form1.answer.value += '2' " />
+          <input type="button" value="3" onclick="form1.answer.value += '3' " />
+          <input type="button" value="+" onclick="form1.answer.value += '+' " />
+
+          <input type="button" value="4" onclick="form1.answer.value += '4' " />
+          <input type="button" value="5" onclick="form1.answer.value += '5' " />
+          <input type="button" value="6" onclick="form1.answer.value += '6' " />
+          <input type="button" value="-" onclick="form1.answer.value += '-' " />
+
+          <input type="button" value="7" onclick="form1.answer.value += '7' " />
+          <input type="button" value="8" onclick="form1.answer.value += '8' " />
+          <input type="button" value="9" onclick="form1.answer.value += '9' " />
+          <input type="button" value="*" onclick="form1.answer.value += '*' " />
+
+          <input type="button" value="/" onclick="form1.answer.value += '/' " />
+          <input type="button" value="0" onclick="form1.answer.value += '0' " />
+          <input type="button" value="." onclick="form1.answer.value += '.' " />
+
+          <input
+            type="button"
+            value="="
+            onclick="form1.answer.value = eval(form1.answer.value) "
+          />
+
+          <input
+            type="button"
+            value="Clear All"
+            onclick="form1.answer.value = '' "
+            id="clear"
+          />
+        </div>
+      </div>
+    </form>
+
+    <script>
+      const validation = document.getElementById();
+    </script>
+  </body>
+</html>
